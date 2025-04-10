@@ -1,0 +1,19 @@
+{
+  "routePlanner": "Планировщик маршрута",
+  "departure": "Место вылета",
+  "arrival": "Место прибытия",
+  "selectDate": "Выберите дату",
+  "selectTime": "Выберите время",
+  "returnFlight": "Обратный рейс",
+  "selectReturnDate": "Выберите дату возвращения",
+  "passengers": "Пассажиры",
+  "passenger": "пассажир",
+  "passengers_plural": "пассажиров",
+  "luggage": "Багаж",
+  "piece": "место",
+  "pieces": "мест",
+  "pets": "Животные",
+  "pet": "животное",
+  "pets_plural": "животных",
+  "viewRoute": "Показать маршрут"
+}

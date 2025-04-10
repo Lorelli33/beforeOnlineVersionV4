@@ -1,0 +1,19 @@
+{
+  "routePlanner": "路线规划",
+  "departure": "出发地",
+  "arrival": "目的地",
+  "selectDate": "选择日期",
+  "selectTime": "选择时间",
+  "returnFlight": "返程航班",
+  "selectReturnDate": "选择返程日期",
+  "passengers": "乘客",
+  "passenger": "位乘客",
+  "passengers_plural": "位乘客",
+  "luggage": "行李",
+  "piece": "件",
+  "pieces": "件",
+  "pets": "宠物",
+  "pet": "只宠物",
+  "pets_plural": "只宠物",
+  "viewRoute": "查看路线"
+}

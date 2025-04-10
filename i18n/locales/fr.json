@@ -1,0 +1,19 @@
+{
+  "routePlanner": "Planificateur d'itinéraire",
+  "departure": "Lieu de départ",
+  "arrival": "Lieu d'arrivée",
+  "selectDate": "Sélectionner la date",
+  "selectTime": "Sélectionner l'heure",
+  "returnFlight": "Vol retour",
+  "selectReturnDate": "Sélectionner la date de retour",
+  "passengers": "Passagers",
+  "passenger": "passager",
+  "passengers_plural": "passagers",
+  "luggage": "Bagages",
+  "piece": "pièce",
+  "pieces": "pièces",
+  "pets": "Animaux",
+  "pet": "animal",
+  "pets_plural": "animaux",
+  "viewRoute": "Voir l'itinéraire"
+}

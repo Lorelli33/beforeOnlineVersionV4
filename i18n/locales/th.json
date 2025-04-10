@@ -1,0 +1,19 @@
+{
+  "routePlanner": "วางแผนเส้นทาง",
+  "departure": "สถานที่ออกเดินทาง",
+  "arrival": "สถานที่ปลายทาง",
+  "selectDate": "เลือกวันที่",
+  "selectTime": "เลือกเวลา",
+  "returnFlight": "เที่ยวบินขากลับ",
+  "selectReturnDate": "เลือกวันที่เดินทางกลับ",
+  "passengers": "ผู้โดยสาร",
+  "passenger": "ท่าน",
+  "passengers_plural": "ท่าน",
+  "luggage": "สัมภาระ",
+  "piece": "ชิ้น",
+  "pieces": "ชิ้น",
+  "pets": "สัตว์เลี้ยง",
+  "pet": "ตัว",
+  "pets_plural": "ตัว",
+  "viewRoute": "ดูเส้นทาง"
+}

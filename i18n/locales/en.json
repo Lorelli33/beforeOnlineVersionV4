@@ -1,0 +1,122 @@
+{
+  "common": {
+    "buttons": {
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "close": "Close",
+      "back": "Back",
+      "next": "Next",
+      "continue": "Continue",
+      "book": "Book Now",
+      "contact": "Contact Us",
+      "learn_more": "Learn More"
+    },
+    "status": {
+      "loading": "Loading...",
+      "error": "Error",
+      "success": "Success",
+      "pending": "Pending",
+      "completed": "Completed",
+      "failed": "Failed"
+    }
+  },
+  "nav": {
+    "services": "Services",
+    "privateJetCharter": "Private Jet Charter",
+    "groupCharter": "Group Charter",
+    "helicopterCharter": "Helicopter Charter",
+    "yachtCharter": "Yacht Charter",
+    "fixedOffers": "Fixed Offers",
+    "emptyLegs": "Empty Legs",
+    "howItWorks": "How It Works",
+    "safety": "Safety",
+    "support": "Support"
+  },
+  "booking": {
+    "search": {
+      "title": "Search Flight",
+      "departure": "Departure location",
+      "arrival": "Arrival location",
+      "date": {
+        "select": "Select date",
+        "departure": "Departure date",
+        "return": "Return date"
+      },
+      "passengers": {
+        "label": "Passengers",
+        "single": "passenger",
+        "multiple": "passengers"
+      },
+      "options": {
+        "returnFlight": "Return Flight",
+        "multiLeg": "Multi-leg Journey"
+      }
+    },
+    "details": {
+      "title": "Booking Details",
+      "luggage": "Luggage",
+      "pets": "Pets",
+      "specialRequests": "Special Requests"
+    },
+    "payment": {
+      "title": "Payment",
+      "methods": {
+        "card": "Credit Card",
+        "crypto": "Cryptocurrency",
+        "bank": "Bank Transfer"
+      },
+      "total": "Total Price",
+      "fees": "Taxes & Fees",
+      "included": "Included"
+    }
+  },
+  "footer": {
+    "tagline": "The world's first web3-based private charter company",
+    "description": "Experience unparalleled luxury and convenience with our private jet charter services. Available 24/7 worldwide.",
+    "services": "Services",
+    "privateJetCharter": "Private Jet Charter",
+    "groupCharter": "Group Charter",
+    "helicopterCharter": "Helicopter Charter",
+    "yachtCharter": "Yacht Charter",
+    "fixedOffers": "Fixed Offers",
+    "emptyLegs": "Empty Legs",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "howItWorks": "How It Works",
+    "safety": "Safety",
+    "about": "About",
+    "support": "Support",
+    "connect": "Connect",
+    "subscribeText": "Subscribe to our newsletter for exclusive offers and updates",
+    "enterEmail": "Enter your email",
+    "subscribe": "Subscribe",
+    "allRightsReserved": "All rights reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "emailUs": "Email Us",
+    "requestNow": "Request Now"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to continue to PrivateCharterX",
+      "email": "Email Address",
+      "password": "Password",
+      "forgotPassword": "Forgot password?",
+      "noAccount": "Don't have an account?",
+      "createAccount": "Create an account",
+      "submit": "Sign In"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Join PrivateCharterX today",
+      "name": "Full Name",
+      "email": "Email Address",
+      "password": "Password",
+      "phone": "Phone Number",
+      "hasAccount": "Already have an account?",
+      "submit": "Create Account"
+    }
+  }
+}

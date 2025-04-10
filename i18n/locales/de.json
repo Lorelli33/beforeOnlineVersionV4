@@ -1,0 +1,19 @@
+{
+  "routePlanner": "Routenplaner",
+  "departure": "Abflugort",
+  "arrival": "Ankunftsort",
+  "selectDate": "Datum wählen",
+  "selectTime": "Zeit wählen",
+  "returnFlight": "Rückflug",
+  "selectReturnDate": "Rückflugdatum wählen",
+  "passengers": "Passagiere",
+  "passenger": "Passagier",
+  "passengers_plural": "Passagiere",
+  "luggage": "Gepäck",
+  "piece": "Stück",
+  "pieces": "Stücke",
+  "pets": "Haustiere",
+  "pet": "Haustier",
+  "pets_plural": "Haustiere",
+  "viewRoute": "Route anzeigen"
+}
