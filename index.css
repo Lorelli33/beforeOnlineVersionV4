@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Cereal:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 255, 255, 255;
+  --foreground: 17, 24, 39;
+}
+
+body {
+  font-family: 'Cereal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+}
+
+/* Title letter spacing */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.025em;
+  font-family: 'Cereal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Form validation styles */
+.was-validated input:invalid {
+  border-color: #ef4444;
+}
+
+.was-validated input:invalid:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.25);
+}
+
+.was-validated input:valid {
+  border-color: #22c55e;
+}
+
+.was-validated input:valid:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.25);
+}
+
+/* Page Transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Content Animations */
+.fade-in {
+  animation: fadeIn 600ms ease-out forwards;
+}
+
+.slide-up {
+  animation: slideUp 600ms ease-out forwards;
+}
+
+.slide-in {
+  animation: slideIn 600ms ease-out forwards;
+}
+
+.scale-in {
+  animation: scaleIn 600ms ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Stagger children animations */
+.stagger-children > * {
+  opacity: 0;
+  animation: fadeIn 600ms ease-out forwards;
+}
+
+.stagger-children > *:nth-child(1) { animation-delay: 100ms; }
+.stagger-children > *:nth-child(2) { animation-delay: 200ms; }
+.stagger-children > *:nth-child(3) { animation-delay: 300ms; }
+.stagger-children > *:nth-child(4) { animation-delay: 400ms; }
+.stagger-children > *:nth-child(5) { animation-delay: 500ms; }
+
+/* Custom scrollbar styling */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(var(--foreground), 0.2) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--foreground), 0.2);
+  border-radius: 20px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(var(--foreground), 0.3);
+}
+
+/* Sticky region headers */
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: inherit;
+}
+
+/* Custom mapbox popup styling */
+.mapboxgl-popup {
+  z-index: 50 !important;
+}
+
+.mapboxgl-popup-content {
+  padding: 0 !important;
+  border-radius: 0.5rem !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(229, 231, 235, 0.8) !important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.mapboxgl-popup-tip {
+  display: none !important;
+}
+
+/* Modal styling */
+.modal-content h2 {
+  font-family: 'Cereal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.modal-content h3, 
+.modal-content h4 {
+  font-family: 'Cereal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.modal-content p {
+  font-family: 'Cereal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+}
+
+/* Phone input styles */
+.phone-input-container {
+  position: relative;
+}
+
+.phone-input-container .form-control {
+  width: 100% !important;
+  padding-left: 48px !important;
+  padding-right: 12px !important;
+  height: 40px !important;
+  border-radius: 0.5rem !important;
+  border: 1px solid #D1D5DB !important;
+  font-size: 0.875rem !important;
+}
+
+.phone-input-container .form-control:focus {
+  border-color: #000000 !important;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1) !important;
+  outline: none !important;
+}
+
+.phone-input-container .flag-dropdown {
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0.5rem 0 0 0.5rem !important;
+}
+
+.phone-input-container .selected-flag {
+  width: 40px !important;
+  padding: 0 0 0 8px !important;
+  border-radius: 0.5rem 0 0 0.5rem !important;
+}
+
+.phone-input-container .selected-flag:hover,
+.phone-input-container .selected-flag:focus {
+  background-color: transparent !important;
+}
+
+.phone-input-container .country-list {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-height: 200px !important;
+  overflow-y: auto !important;
+  background-color: white !important;
+  border: 1px solid #D1D5DB !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+.phone-input-container .country-list .country {
+  padding: 8px 12px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.phone-input-container .country-list .country:hover {
+  background-color: #F3F4F6 !important;
+}
+
+.phone-input-container .country-list .country.highlight {
+  background-color: #F3F4F6 !important;
+}
+
+/* Image animations */
+.hover-scale {
+  transition: transform 300ms ease-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Content reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Intersection Observer animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-scale {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 600ms ease-out, transform 600ms ease-out;
+}
+
+.fade-in-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}

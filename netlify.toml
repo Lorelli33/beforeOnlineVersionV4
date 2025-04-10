@@ -1,0 +1,57 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[dev]
+  command = "npm run dev"
+  targetPort = 5173
+
+[[redirects]]
+  from = "/.netlify/functions/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+# Main domain configuration
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
+  conditions = {Host = ["www.privatecharterx.com", "privatecharterx.com"]}
+
+# Admin subdomain configuration  
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
+  conditions = {Host = ["admin.privatecharterx.com"]}
+
+# Cookie policy redirects
+[[redirects]]
+  from = "/cookies"
+  to = "/cookie-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cookie"
+  to = "/cookie-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cookie-settings"
+  to = "/cookie-policy"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;"
